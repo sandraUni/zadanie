@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace zadanie
 {
@@ -20,9 +22,56 @@ namespace zadanie
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static List<Student> personList = new List<Student>();
+
         public MainWindow()
         {
             InitializeComponent();
+
+
+        }
+
+        private void Read_Click(object sender, RoutedEventArgs e)
+        {
+            XmlSerializer xs = new XmlSerializer(typeof(List<Student>));
+            using (Stream s = File.OpenRead("../list.xml"))
+            {
+                personList = (List<Student>)xs.Deserialize(s);
+            }
+            list.ItemsSource = personList;
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+        }
+
+
+        private void List_Click(object sender, MouseButtonEventArgs e)
+        {
+            int i = (sender as ListView).SelectedIndex;
+            if (i > -1)
+            {
+                Window2 window2 = new Window2(i);
+                window2.Show();
+            }
+        }
+
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            list.ItemsSource = null;
+            list.ItemsSource = personList;
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            XmlSerializer xs = new XmlSerializer(typeof(List<Student>));
+            using (Stream s = File.Create("../list.xml"))
+            {
+                xs.Serialize(s, personList);
+            }
+
         }
     }
 }

@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:zadanie"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="List" Height="450" Width="250">
     <Grid>
-        
+        <StackPanel>
+            <ListView Name="list" PreviewMouseLeftButtonUp="List_Click">
+                <ListView.View>
+                    <GridView>
+                        <GridView.Columns>
+                            <GridViewColumn Width="50" Header="Index" DisplayMemberBinding="{Binding index}" />
+                            <GridViewColumn Width="90" Header="Surname" DisplayMemberBinding="{Binding surname}" />
+                            <GridViewColumn Width="90" Header="Name" DisplayMemberBinding="{Binding name}" />
+                        </GridView.Columns>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button Height="30" Width="100"  Margin="5" Content="Read from file" Click="Read_Click" />
+            <Button Height="30" Width="50" Margin="5" Content="Refresh" Click="Refresh_Click"/>
+            <Button Height="30" Width="70"  Margin="5" Content="Save to file" Click="Save_Click" />
+            <Button Height="30" Width="100"  Margin="5" Content="Add new Student" Click="Add_Click" />
+        </StackPanel>
     </Grid>
 </Window>
