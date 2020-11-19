@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:zadanie"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        Title="Student" Height="450" Width="300">
     <Grid>
-        
+        <WrapPanel Name="list">
+            <Label Content="Index:" MinWidth="75" Margin="5"/>
+            <TextBox MinWidth="180" Margin="5" Name="text_index"/>
+            <Label Content="Surname:" MinWidth="75" Margin="5"/>
+            <TextBox MinWidth="180" Margin="5" Name="text_surname"/>
+            <Label Content="Name:" MinWidth="75" Margin="5"/>
+            <TextBox MinWidth="180" Margin="5" Name="text_name"/>
+            <Label Content="Pesel:" MinWidth="75" Margin="5"/>
+            <TextBox MinWidth="180" Margin="5" Name="text_pesel"/>
+            <Label Content="Age:" MinWidth="75" Margin="5"/>
+            <TextBox MinWidth="180" Margin="5" Name="text_age"/>
+            <Label Content="Image:" MinWidth="75" Margin="5"/>
+            <Image Height="100" Width="100" Stretch="Uniform" Name="imgDynamic" Margin="10"/>
+            <Button Height="30" Width="100" Content="Change" Click="Change_Click"></Button>
+            <Button Height="30" Width="100" Content="Add image" Click="Image_Click"></Button>
+            <Label Name="index" Visibility="Hidden"></Label>
+        </WrapPanel>
     </Grid>
 </Window>
