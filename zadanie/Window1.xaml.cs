@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace zadanie
 {
@@ -19,9 +20,36 @@ namespace zadanie
     /// </summary>
     public partial class Window1 : Window
     {
+        int index;
+        string surname;
+        string name;
+        long pesel;
+        int age;
+        static BitmapImage image;
+
+
         public Window1()
         {
             InitializeComponent();
+
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            index = Convert.ToInt32(text_index.Text);
+            surname = text_surname.Text;
+            name = text_name.Text;
+            pesel = Convert.ToInt64(text_pesel.Text);
+            age = Convert.ToInt32(text_age.Text);
+
+            MainWindow.personList.Add(new Student(index, surname, name, pesel, age, image));
+
+        }
+
+        private void Image_Click(object sender, RoutedEventArgs e)
+        {
+
+            
         }
     }
 }
