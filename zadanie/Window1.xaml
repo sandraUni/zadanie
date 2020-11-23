@@ -15,7 +15,8 @@
             <Label Content="Name:" MinWidth="75" Margin="5"/>
             <TextBox MinWidth="180" Margin="5" Name="text_name"/>
             <Label Content="Pesel:" MinWidth="75" Margin="5"/>
-            <local:UserControl1 MinWidth="180" Margin="5" x:Name="text_pesel"/>
+            <local:UserControl1  PreviewTextInput="NumberValidationTextBox" MaxLength="11" Height="50"/>
+            <local:UserControl1 MinWidth="180" Margin="5" PreviewTextInput="NumberValidationTextBox" MaxLength="11" x:Name="text_pesel"/>
             <Label Content="Age:" MinWidth="75" Margin="5"/>
             <TextBox MinWidth="180" Margin="5" Name="text_age"/>
             <Label Content="Image:" MinWidth="75" Margin="5"/>
