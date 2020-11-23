@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
 namespace zadanie
 {
@@ -23,6 +24,16 @@ namespace zadanie
         public UserControl1()
         {
             InitializeComponent();
+            this.DataContext = this;
+        }
+        public int MaxLength { get; set; }
+
+        public string PreviewTextInput { get; set; }
+
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }
