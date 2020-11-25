@@ -44,6 +44,7 @@ namespace zadanie
             age = Convert.ToInt32(text_age.Text);
 
             MainWindow.personList.Add(new Student(index, surname, name, pesel, age, image));
+            this.Close();
 
         }
 
