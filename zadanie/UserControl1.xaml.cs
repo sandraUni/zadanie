@@ -28,7 +28,5 @@ namespace zadanie
         public string Text { get; set; }
 
         public int MaxLength { get; set; }
-
-        
     }
 }

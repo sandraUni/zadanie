@@ -9,13 +9,13 @@
     <Grid>
         <WrapPanel Name="list">
             <Label Content="Index:" MinWidth="75" Margin="5"/>
-            <TextBox MinWidth="180" Margin="5" Name="text_index"/>
+            <TextBox MinWidth="180" MaxLength="2" Margin="5" Name="text_index"/>
             <Label Content="Surname:" MinWidth="75" Margin="5"/>
             <TextBox MinWidth="180" Margin="5" Name="text_surname"/>
             <Label Content="Name:" MinWidth="75" Margin="5"/>
             <TextBox MinWidth="180" Margin="5" Name="text_name"/>
             <Label Content="Pesel:" MinWidth="75" Margin="5"/>
-            <local:UserControl1 MaxLength="11" MinWidth="180" Margin="5" PreviewTextInput="NumberValidationTextBox" x:Name="text_pesel"/>
+            <TextBox MaxLength="11" MinWidth="180" Margin="5" PreviewTextInput="NumberValidationTextBox" x:Name="text_pesel"/>
             <Label Content="Age:" MinWidth="75" Margin="5"/>
             <TextBox MinWidth="180" Margin="5" Name="text_age"/>
             <Label Content="Image:" MinWidth="75" Margin="5"/>

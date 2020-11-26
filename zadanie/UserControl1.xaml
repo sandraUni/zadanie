@@ -23,6 +23,6 @@
                 <TextBlock Text="{Binding MaxLength}" />
             </StackPanel>
         </Label>
-        <TextBox MaxLength="{Binding MaxLength}" Grid.Row="1" Grid.ColumnSpan="2" Name="txtLimitedInput"/>
+        <TextBox MaxLength="{Binding MaxLength}" Grid.Row="1" Grid.ColumnSpan="2" Name="txtLimitedInput" />
     </Grid>
 </UserControl>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:zadanie"
         mc:Ignorable="d"
-        Title="List" Height="450" Width="250">
+        Title="List" Height="450" Width="240">
     <Grid>
         <StackPanel>
             <ListView Name="list" PreviewMouseLeftButtonUp="List_Click">
