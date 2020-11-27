@@ -27,6 +27,7 @@ namespace zadanie
         long pesel;
         int age;
         static BitmapImage image;
+        
 
 
         public Window1()
@@ -65,6 +66,21 @@ namespace zadanie
         {
             Regex regex = new Regex("[^0-9]+");
             e.Handled = regex.IsMatch(e.Text);
+
+            if (!Regex.IsMatch(e.Text, "[^a-z]+"))
+            {
+                e.Handled = true;
+                MessageBox.Show("Tylko wartości liczbowe.");
+            }
+        }
+
+        private void MaxLength(object sender, RoutedEventArgs e)
+        {
+            if (text_pesel.Text.Length >= 12)
+            {
+                text_pesel.Text = text_pesel.Text.Substring(0, 11);
+                MessageBox.Show("Pesel nie może mieć więcej niż 11 liczb!");
+            }
         }
     }
 }
