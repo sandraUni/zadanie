@@ -77,13 +77,16 @@ namespace zadanie
 
         private void Connect_Click(object sender, RoutedEventArgs e)
         {
-            string connetionString;
+            Base.openConnection();
+            MessageBox.Show("Open connection!");
+
+            /*string connetionString;
             SqlConnection cnn;
             connetionString = @"Data source=DESKTOP-MO4AB4G\MSSQLSERVER04; database=StudentList; Integrated Security=SSPI;";
             cnn = new SqlConnection(connetionString);
             cnn.Open();
             MessageBox.Show("Open connection!");
-            cnn.Close();
+            cnn.Close();*/
 
         }
     }
