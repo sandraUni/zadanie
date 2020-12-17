@@ -88,5 +88,52 @@ namespace zadanie
                 image_path.Text = openFileDialog.FileName;
             }
         }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandText = "Insert into List ([Index], [Surname], [Name], [Age], [Pesel], [Image]) values(@Index, @Surname, @Name, @Age, @Pesel, @Image)";
+
+            cmd.Parameters.AddWithValue("Index", text_index.Text);
+            cmd.Parameters.AddWithValue("Surname", text_surname.Text);
+            cmd.Parameters.AddWithValue("Name", text_name.Text);
+            cmd.Parameters.AddWithValue("Pesel", text_pesel.Text);
+            cmd.Parameters.AddWithValue("Age", text_age.Text);
+            cmd.Parameters.AddWithValue("Image", image_path.Text);
+
+            cmd.Connection = cnn;
+
+            int a = cmd.ExecuteNonQuery();
+            if (a == 1)
+            {
+                MessageBox.Show("Data add Sucessfully!");
+                BindingDataGrid();
+            }
+        }
+
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandText = "Update List set [Index]=@Index, [Surname]=@Surname, [Name]=@Name, [Age]=@Age, [Pesel]=@Pesel, [Image]=@Image where [Index]=@Index";
+
+
+            cmd.Parameters.AddWithValue("Index", text_index.Text);
+            cmd.Parameters.AddWithValue("Surname", text_surname.Text);
+            cmd.Parameters.AddWithValue("Name", text_name.Text);
+            cmd.Parameters.AddWithValue("Pesel", text_pesel.Text);
+            cmd.Parameters.AddWithValue("Age", text_age.Text);
+            cmd.Parameters.AddWithValue("Image", image_path.Text);
+
+            cmd.Connection = cnn;
+
+            int a = cmd.ExecuteNonQuery();
+            if (a == 1)
+            {
+                MessageBox.Show("Information updated!");
+                BindingDataGrid();
+            }
+        }
     }
 }

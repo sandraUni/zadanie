@@ -24,5 +24,7 @@
         <GroupBox Name="groupBox" Header="Student" Height="283" Width="256" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBox Name="image_path" Height="23" Width="450" Margin="370,335,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Hidden"/>
         <Button Content="Add image" Width="100" Margin="16,310,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Image_Click"/>
+        <Button Content="Add new Student" Width="100" Margin="16,350,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Add_Click"/>
+        <Button Content="Update" Width="75" Margin="130,350,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Update_Click"/>
     </Grid>
 </Window>
