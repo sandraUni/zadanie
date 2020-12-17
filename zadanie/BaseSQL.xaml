@@ -28,5 +28,8 @@
         <Button Content="Update" Width="75" Margin="130,350,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Update_Click"/>
         <Button Content="Delet Student" Width="75" Margin="220,350,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Delete_Click"/>
         <Button Content="Reset" Width="75" Margin="310,350,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Reset_Click"/>
+        <Button Content="Click here to see how many Students of all ages are there." Width="430" Margin="16,400,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="FunctionTab_Click"/>
+        <Button Content="Click to check the average age of Students." Width="430" Margin="16,430,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="FunctionScalar_Click"/>
+        <Button Content="Click here to see Index and Surnames Students whose age is between 21 and 25." Width="430" Margin="16,460,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Wiev_Click"/>
     </Grid>
 </Window>

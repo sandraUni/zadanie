@@ -164,5 +164,55 @@ namespace zadanie
             image_path.Text = "";
             imgDynamic.Source = null;
         }
+
+        private void FunctionTab_Click(object sender, RoutedEventArgs e)
+        {
+            sql = "SELECT * FROM CountAge()";
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                Output = Output + dataReader.GetValue(1) + " yers - " + dataReader.GetValue(0) + " Students\n";
+            }
+
+            MessageBox.Show(Output);
+            command.Dispose();
+            dataReader.Close();
+            Output = "";
+        }
+
+        private void FunctionScalar_Click(object sender, RoutedEventArgs e)
+        {
+            sql = "SELECT dbo.AverageAge();";
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                Output = Output + dataReader.GetValue(0);
+            }
+
+            MessageBox.Show("The average age of students is: " + Output);
+            dataReader.Close();
+            Output = "";
+        }
+
+        private void Wiev_Click(object sender, RoutedEventArgs e)
+        {
+            sql = "SELECT * FROM myview;";
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+
+            while (dataReader.Read())
+            {
+                Output = Output + dataReader.GetValue(0) + " - " + dataReader.GetValue(1) + "\n";
+            }
+
+            MessageBox.Show(Output);
+            dataReader.Close();
+            Output = "";
+        }
     }
 }
