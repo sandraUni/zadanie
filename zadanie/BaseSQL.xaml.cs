@@ -153,5 +153,16 @@ namespace zadanie
                 BindingDataGrid();
             }
         }
+
+        private void Reset_Click(object sender, RoutedEventArgs e)
+        {
+            text_index.Text = "";
+            text_surname.Text = "";
+            text_name.Text = "";
+            text_pesel.Text = "";
+            text_age.Text = "";
+            image_path.Text = "";
+            imgDynamic.Source = null;
+        }
     }
 }
