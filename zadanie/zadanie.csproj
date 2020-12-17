@@ -55,7 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Base.cs" />
     <Compile Include="BaseSQL.xaml.cs">
       <DependentUpon>BaseSQL.xaml</DependentUpon>
     </Compile>
