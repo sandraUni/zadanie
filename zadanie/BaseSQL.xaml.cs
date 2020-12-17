@@ -135,5 +135,23 @@ namespace zadanie
                 BindingDataGrid();
             }
         }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandText = "Delete From List where [Index]=@Index";
+
+            cmd.Parameters.AddWithValue("Index", text_index.Text);
+
+            cmd.Connection = cnn;
+
+            int a = cmd.ExecuteNonQuery();
+            if (a == 1)
+            {
+                MessageBox.Show("Deleted Sucessfully!");
+                BindingDataGrid();
+            }
+        }
     }
 }

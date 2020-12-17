@@ -26,5 +26,6 @@
         <Button Content="Add image" Width="100" Margin="16,310,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Image_Click"/>
         <Button Content="Add new Student" Width="100" Margin="16,350,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Add_Click"/>
         <Button Content="Update" Width="75" Margin="130,350,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Update_Click"/>
+        <Button Content="Delet Student" Width="75" Margin="220,350,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Delete_Click"/>
     </Grid>
 </Window>
