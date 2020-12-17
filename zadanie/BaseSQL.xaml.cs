@@ -232,5 +232,17 @@ namespace zadanie
             dataReader.Close();
             Output = "";
         }
+
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
+
+            if (!Regex.IsMatch(e.Text, "[^a-z]+"))
+            {
+                e.Handled = true;
+                MessageBox.Show("Tylko wartości liczbowe.");
+            }
+        }
     }
 }
