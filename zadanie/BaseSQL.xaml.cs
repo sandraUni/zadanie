@@ -53,6 +53,24 @@ namespace zadanie
             MessageBox.Show("Connection Close!");
         }
 
+        private void SelectionChangedDataGrid(object sender, SelectionChangedEventArgs e)
+        {
+            DataGrid datagrid = sender as DataGrid;
+            DataRowView datarow = datagrid.SelectedItem as DataRowView;
+            if (datarow != null)
+            {
+                text_index.Text = datarow["Index"].ToString();
+                text_surname.Text = datarow["Surname"].ToString();
+                text_name.Text = datarow["Name"].ToString();
+                text_pesel.Text = datarow["Pesel"].ToString();
+                text_age.Text = datarow["Age"].ToString();
+                image_path.Text = datarow["Image"].ToString();
+
+                Uri uri = new Uri(image_path.Text);
+                imgDynamic.Source = new BitmapImage(uri);
+            }
+        }
+
         private void BindingDataGrid()
         {
             command = new SqlCommand();
