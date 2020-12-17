@@ -77,8 +77,6 @@ namespace zadanie
 
         private void Connect_Click(object sender, RoutedEventArgs e)
         {
-            Base.openConnection();
-            MessageBox.Show("Connection Open!");
 
             BaseSQL baseSQL = new BaseSQL();
             baseSQL.Show();

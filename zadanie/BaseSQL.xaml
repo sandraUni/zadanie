@@ -5,11 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:zadanie"
         mc:Ignorable="d"
-        Title="BaseSQL" Height="230" Width="315"
-        Loaded="Window_Loaded">
+        Title="BaseSQL" Height="520" Width="1055"
+        Loaded="Window_Loaded" Closed="Window_Closed">
     <Grid>
-        <WrapPanel>
-            <DataGrid Name="myDataGrid" IsSynchronizedWithCurrentItem="True" AutoGenerateColumns="True" Height="200" Width="300" ></DataGrid>
-        </WrapPanel>
+        <DataGrid Name="myDataGrid" Height="299" Width="720" Margin="317,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" IsSynchronizedWithCurrentItem="True" AutoGenerateColumns="True" SelectionChanged="SelectionChangedDataGrid"></DataGrid>
+        <Label Content="Index:" Margin="34,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Surname:" Margin="34,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Name:" Margin="34,90,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Pesel:"  Margin="34,120,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Age:" Margin="34,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Image:" Margin="34,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="text_index" Height="23" Width="120" Margin="105,30,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="text_surname" Height="23" Width="120" Margin="105,60,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="text_name" Height="23" Width="120" Margin="105,90,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="text_pesel" Height="23" Width="120" Margin="105,120,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top" MaxLength="11" PreviewTextInput="NumberValidationTextBox"/>
+        <TextBox Name="text_age" Height="23" Width="120" Margin="105,150,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image Name="imgDynamic" Height="103" Width="120" Margin="105,180,0,0"  Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <GroupBox Name="groupBox" Header="Student" Height="283" Width="256" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="image_path" Height="23" Width="450" Margin="370,335,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Hidden"/>
     </Grid>
 </Window>

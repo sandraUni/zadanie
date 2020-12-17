@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using System.Data;
+using Microsoft.Win32;
+using System.Text.RegularExpressions;
 
 namespace zadanie
 {
@@ -20,6 +23,16 @@ namespace zadanie
     /// </summary>
     public partial class BaseSQL : Window
     {
+        static string connetionString;
+        static SqlConnection cnn;
+        static SqlCommand command;
+        static SqlDataReader dataReader;
+        static SqlDataAdapter adapter = new SqlDataAdapter();
+        static DataTable dataTable = new DataTable();
+        static String sql = "";
+        static String Output = "";
+        static BitmapImage image;
+
         public BaseSQL()
         {
             InitializeComponent();
@@ -27,9 +40,40 @@ namespace zadanie
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Base.readBase();
+            connetionString = @"Data source=DESKTOP-MO4AB4G\MSSQLSERVER04; database=StudentList; Integrated Security=SSPI;";
+            cnn = new SqlConnection(connetionString);
+            cnn.Open();
+            MessageBox.Show("Connection Open!");
+            BindingDataGrid();
+        }
 
-            myDataGrid.ItemsSource = Base.dataTable.DefaultView;
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            cnn.Close();
+            MessageBox.Show("Connection Close!");
+        }
+
+        private void BindingDataGrid()
+        {
+            command = new SqlCommand();
+
+            command.CommandText = "Select * from List";
+            command.CommandType = CommandType.Text;
+            command.Connection = cnn;
+
+            adapter = new SqlDataAdapter(command);
+            dataTable = new DataTable("List");
+            adapter.Fill(dataTable);
+
+            myDataGrid.ItemsSource = dataTable.DefaultView;
+
+            text_index.Text = "";
+            text_surname.Text = "";
+            text_name.Text = "";
+            text_pesel.Text = "";
+            text_age.Text = "";
+            image_path.Text = "";
+            imgDynamic.Source = null;
         }
     }
 }
