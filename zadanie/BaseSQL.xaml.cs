@@ -75,5 +75,18 @@ namespace zadanie
             image_path.Text = "";
             imgDynamic.Source = null;
         }
+
+        private void Image_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+            if (openFileDialog.ShowDialog() == true)
+            {
+                Uri fileUri = new Uri(openFileDialog.FileName);
+                imgDynamic.Source = new BitmapImage(fileUri);
+                image = new BitmapImage(fileUri);
+                image_path.Text = openFileDialog.FileName;
+            }
+        }
     }
 }

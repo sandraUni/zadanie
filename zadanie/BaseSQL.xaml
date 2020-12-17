@@ -23,5 +23,6 @@
         <Image Name="imgDynamic" Height="103" Width="120" Margin="105,180,0,0"  Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <GroupBox Name="groupBox" Header="Student" Height="283" Width="256" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBox Name="image_path" Height="23" Width="450" Margin="370,335,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Button Content="Add image" Width="100" Margin="16,310,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Image_Click"/>
     </Grid>
 </Window>
