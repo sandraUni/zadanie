@@ -244,5 +244,6 @@ namespace zadanie
                 MessageBox.Show("Tylko wartości liczbowe.");
             }
         }
+        
     }
 }
