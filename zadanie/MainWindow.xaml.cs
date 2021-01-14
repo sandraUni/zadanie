@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 using System.IO;
 using System.Data.SqlClient;
+using System.Xml.Serialization;
 
 namespace zadanie
 {
