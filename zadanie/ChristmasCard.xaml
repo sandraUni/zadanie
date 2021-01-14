@@ -6,6 +6,14 @@
         xmlns:local="clr-namespace:zadanie"
         mc:Ignorable="d"
         Title="Christmas Card" Height="700" Width="600" ResizeMode="NoResize" Style="{StaticResource Style0}">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="WhiteSmoke" />
+            <Setter Property="FontSize" Value="50" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+    </Window.Resources>
     <Grid>
         
     </Grid>
