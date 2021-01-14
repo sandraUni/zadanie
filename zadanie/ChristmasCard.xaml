@@ -16,6 +16,13 @@
     </Window.Resources>
     <Grid>
         <StackPanel>
+            <StackPanel.Resources>
+                <Style x:Key="TreeStyle" TargetType="Path" >
+                    <Setter Property="Fill" Value="Green"/>
+                    <Setter Property="Stretch" Value="Fill"/>
+                </Style>
+            </StackPanel.Resources>
+            
             <TextBlock >I wish you a</TextBlock>
             <TextBlock >Merry Christmas</TextBlock>
             <local:Star Height="50" Width="50"></local:Star>
