@@ -74,5 +74,11 @@ namespace zadanie
             }
 
         }
+
+        private void Card_Click(object sender, RoutedEventArgs e)
+        {
+            ChristmasCard christmasCard = new ChristmasCard();
+            christmasCard.Show();
+        }
     }
 }
