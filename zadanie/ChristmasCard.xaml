@@ -39,5 +39,17 @@
 
         <Button Style="{StaticResource ControlStyle}" Margin="259,0,286.6,23.4" Height="60"></Button>
         <TextBox Style="{StaticResource ControlStyle}" Margin="0,0,-0.5,0.5" Height="26" />
+        <local:ChristmasBall Margin="268,409,295.6,231.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="285,545,277.6,95.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="438,545,124.6,95.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="299,258,263.6,382.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="213,387,349.6,252.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="227,492,335.6,147.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="285,328,277.6,312.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="143,530,420.6,110.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="329,458,233.6,182.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="395,458,168.6,182.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="355,369,207.6,270.4"></local:ChristmasBall>
+        <local:ChristmasBall Margin="355,530,207.6,110.4"></local:ChristmasBall>
     </Grid>
 </Window>
