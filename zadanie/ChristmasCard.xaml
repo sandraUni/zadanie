@@ -29,6 +29,18 @@
             <Style x:Key="GiftStyle2" TargetType="Rectangle" BasedOn="{StaticResource GiftStyle1}">
                 <Setter Property="Fill" Value="Violet" />
             </Style>
+
+            <Style x:Key="Knot1" TargetType="Rectangle">
+                <Setter Property="Fill" Value="Black" />
+                <Setter Property="Height" Value="30" />
+                <Setter Property="Width" Value="5" />
+            </Style>
+            <Style x:Key="Knot2" TargetType="Rectangle" BasedOn="{StaticResource Knot1}">
+                <Setter Property="Fill" Value="Black" />
+                <Setter Property="Height" Value="5" />
+                <Setter Property="Width" Value="30" />
+            </Style>
+            
         </Grid.Resources>
         <StackPanel>
             <StackPanel.Resources>
@@ -72,6 +84,24 @@
         <Rectangle Style="{StaticResource GiftStyle2}" Margin="438,616,125.6,24.4"></Rectangle>
         <Rectangle Style="{StaticResource GiftStyle2}" Margin="336,616,227.6,24.4"></Rectangle>
         <Rectangle Style="{StaticResource GiftStyle2}" Margin="395,606,168.6,34.4"></Rectangle>
+
+        <Rectangle Style="{StaticResource Knot1}" Margin="168,616,420.6,24.4"></Rectangle>
+        <Rectangle Style="{StaticResource Knot2}" Margin="157,631,406.6,34.4"></Rectangle>
+
+        <Rectangle Style="{StaticResource Knot1}" Margin="204,606,379.6,34.4"></Rectangle>
+        <Rectangle Style="{StaticResource Knot2}" Margin="192,616,371.6,44.4"></Rectangle>
+
+        <Rectangle Style="{StaticResource Knot1}" Margin="239,616,349.6,24.4"></Rectangle>
+        <Rectangle Style="{StaticResource Knot2}" Margin="227,631,336.6,34.4"></Rectangle>
+
+        <Rectangle Style="{StaticResource Knot1}" Margin="349,616,239.6,24.4"></Rectangle>
+        <Rectangle Style="{StaticResource Knot2}" Margin="336,631,227.6,34.4"></Rectangle>
+
+        <Rectangle Style="{StaticResource Knot1}" Margin="452,616,137.6,24.4"></Rectangle>
+        <Rectangle Style="{StaticResource Knot2}" Margin="438,631,125.6,34.4"></Rectangle>
+
+        <Rectangle Style="{StaticResource Knot1}" Margin="408,606,181.6,34.4"></Rectangle>
+        <Rectangle Style="{StaticResource Knot2}" Margin="395,618,168.6,46.4"></Rectangle>
 
         <Button Style="{StaticResource ControlStyle}" Width="5" Margin="104,187,473.6,464.4"></Button>
         <Button Style="{StaticResource ControlStyle}" Width="5" Margin="405,281,168.6,370.4"></Button>
