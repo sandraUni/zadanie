@@ -20,6 +20,15 @@
                 <Setter Property="Background" Value="White"/>
                 <Setter Property="VerticalAlignment" Value="Bottom"/>
             </Style>
+
+            <Style x:Key="GiftStyle1" TargetType="Rectangle">
+                <Setter Property="Fill" Value="Blue" />
+                <Setter Property="Height" Value="30" />
+                <Setter Property="Width" Value="30" />
+            </Style>
+            <Style x:Key="GiftStyle2" TargetType="Rectangle" BasedOn="{StaticResource GiftStyle1}">
+                <Setter Property="Fill" Value="Violet" />
+            </Style>
         </Grid.Resources>
         <StackPanel>
             <StackPanel.Resources>
@@ -55,6 +64,14 @@
         <local:ChristmasBall Margin="395,458,168.6,182.4"></local:ChristmasBall>
         <local:ChristmasBall Margin="355,369,207.6,270.4"></local:ChristmasBall>
         <local:ChristmasBall Margin="355,530,207.6,110.4"></local:ChristmasBall>
+
+        <Rectangle Style="{StaticResource GiftStyle1}" Margin="227,616,336.6,24.4"></Rectangle>
+        <Rectangle Style="{StaticResource GiftStyle1}" Margin="157,616,406.6,24.4"></Rectangle>
+        <Rectangle Style="{StaticResource GiftStyle1}" Margin="192,606,371.6,34.4"></Rectangle>
+
+        <Rectangle Style="{StaticResource GiftStyle2}" Margin="438,616,125.6,24.4"></Rectangle>
+        <Rectangle Style="{StaticResource GiftStyle2}" Margin="336,616,227.6,24.4"></Rectangle>
+        <Rectangle Style="{StaticResource GiftStyle2}" Margin="395,606,168.6,34.4"></Rectangle>
 
         <Button Style="{StaticResource ControlStyle}" Width="5" Margin="104,187,473.6,464.4"></Button>
         <Button Style="{StaticResource ControlStyle}" Width="5" Margin="405,281,168.6,370.4"></Button>
