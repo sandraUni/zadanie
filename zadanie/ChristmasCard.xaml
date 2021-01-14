@@ -18,6 +18,7 @@
         <StackPanel>
             <TextBlock >I wish you a</TextBlock>
             <TextBlock >Merry Christmas</TextBlock>
+            <local:Star Height="50" Width="50"></local:Star>
         </StackPanel>
     </Grid>
 </Window>
