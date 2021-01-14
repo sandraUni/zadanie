@@ -15,18 +15,29 @@
         </Style>
     </Window.Resources>
     <Grid>
+        <Grid.Resources>
+            <Style x:Key="ControlStyle" TargetType="Control">
+                <Setter Property="Background" Value="Green"/>
+                <Setter Property="VerticalAlignment" Value="Bottom"/>
+            </Style>
+        </Grid.Resources>
         <StackPanel>
             <StackPanel.Resources>
                 <Style x:Key="TreeStyle" TargetType="Path" >
                     <Setter Property="Fill" Value="Green"/>
                     <Setter Property="Stretch" Value="Fill"/>
                 </Style>
+
+
             </StackPanel.Resources>
-            
+
             <TextBlock >I wish you a</TextBlock>
             <TextBlock >Merry Christmas</TextBlock>
             <local:Star Height="50" Width="50"></local:Star>
             <Path Style="{StaticResource TreeStyle}" Height="400"  Width="400" Data="M 1.5,0 L 3,3 0,3 Z"/>
         </StackPanel>
+
+        <Button Style="{StaticResource ControlStyle}" Margin="259,0,286.6,23.4" Height="60"></Button>
+        <TextBox Style="{StaticResource ControlStyle}" Margin="0,0,-0.5,0.5" Height="26" />
     </Grid>
 </Window>
