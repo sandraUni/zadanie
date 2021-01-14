@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:zadanie"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="Style0" TargetType="Window">
+            <Setter Property="Background" Value="DarkRed" />
+        </Style>
     </Application.Resources>
 </Application>
