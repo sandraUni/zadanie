@@ -26,6 +26,7 @@
             <TextBlock >I wish you a</TextBlock>
             <TextBlock >Merry Christmas</TextBlock>
             <local:Star Height="50" Width="50"></local:Star>
+            <Path Style="{StaticResource TreeStyle}" Height="400"  Width="400" Data="M 1.5,0 L 3,3 0,3 Z"/>
         </StackPanel>
     </Grid>
 </Window>
