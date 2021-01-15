@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:zadanie"
         mc:Ignorable="d"
-        Title="Christmas Card" Height="710" Width="620"  Style="{StaticResource Style0}">
+        Title="Christmas Card" Height="710" Width="620" ResizeMode="NoResize" Style="{StaticResource Style0}">
     <Window.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="TextAlignment" Value="Center" />
