@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Report" Height="450" Width="800">
     <Grid>
-        
+        <WindowsFormsHost HorizontalAlignment="Left" Height="420" Margin="0,0,0,0" VerticalAlignment="Top" Width="794"/>
+
     </Grid>
 </Window>
