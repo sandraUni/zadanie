@@ -24,6 +24,7 @@
             <Button Height="30" Width="70"  Margin="5" Content="Save to file" Click="Save_Click" />
             <Button Height="30" Width="100"  Margin="5" Content="Add new Student" Click="Add_Click" />
             <Button Height="30" Width="100"  Margin="5" Content="Christmas Card" Click="Card_Click" />
+            <Button Height="30" Width="100"  Margin="5" Content="Report" Click="Report_Click" />
         </StackPanel>
     </Grid>
 </Window>

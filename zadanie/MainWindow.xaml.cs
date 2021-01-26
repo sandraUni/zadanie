@@ -80,5 +80,11 @@ namespace zadanie
             ChristmasCard christmasCard = new ChristmasCard();
             christmasCard.Show();
         }
+
+        private void Report_Click(object sender, RoutedEventArgs e)
+        {
+            Report report = new Report();
+            report.Show();
+        }
     }
 }
