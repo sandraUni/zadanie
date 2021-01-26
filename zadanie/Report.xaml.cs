@@ -11,6 +11,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Forms;
+using System.Windows.Forms.Integration;
+using Microsoft.Reporting;
+using Microsoft.ReportingServices;
+using Microsoft.Reporting.WinForms;
 
 namespace zadanie
 {
@@ -22,6 +27,9 @@ namespace zadanie
         public Report()
         {
             InitializeComponent();
+            rptViewer.ServerReport.ReportServerUrl = new Uri("http://desktop-mo4ab4g:80/ReportServer", System.UriKind.Absolute);
+            rptViewer.ServerReport.ReportPath = "/Test/Report1";
+            rptViewer.RefreshReport();
         }
     }
 }

@@ -4,10 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:zadanie"
+        xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:wfr="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
         mc:Ignorable="d"
         Title="Report" Height="450" Width="800">
     <Grid>
-        <WindowsFormsHost HorizontalAlignment="Left" Height="420" Margin="0,0,0,0" VerticalAlignment="Top" Width="794"/>
+        <wfi:WindowsFormsHost VerticalAlignment="Stretch" Name="winFormsHost" >
+            <wfr:ReportViewer x:Name="rptViewer" ProcessingMode="Remote" Visible="True" />
+        </wfi:WindowsFormsHost>
 
     </Grid>
 </Window>
