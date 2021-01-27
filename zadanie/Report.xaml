@@ -8,7 +8,7 @@
         xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         xmlns:wfr="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
         mc:Ignorable="d"
-        Title="Report" Height="450" Width="800">
+        Title="Report" Height="1000" Width="800">
     <Grid>
         <wfi:WindowsFormsHost VerticalAlignment="Stretch" Name="winFormsHost" >
             <wfr:ReportViewer x:Name="rptViewer" ProcessingMode="Remote" Visible="True" />
