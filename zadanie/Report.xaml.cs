@@ -28,7 +28,7 @@ namespace zadanie
         {
             InitializeComponent();
             rptViewer.ServerReport.ReportServerUrl = new Uri("http://desktop-mo4ab4g:80/ReportServer", System.UriKind.Absolute);
-            rptViewer.ServerReport.ReportPath = "/Test/Report1";
+            rptViewer.ServerReport.ReportPath = "/Reports/Report1";
             rptViewer.RefreshReport();
         }
     }

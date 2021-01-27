@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" MustUnderstand="df">
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -9,7 +9,7 @@
         <ConnectString>Data Source=DESKTOP-MO4AB4G\MSSQLSERVER04;Initial Catalog=AdventureWorks2019</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
+      <rd:SecurityType>Integrated</rd:SecurityType>
       <rd:DataSourceID>bd5906bb-6549-46c9-a4f1-42f54a5348b3</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -52,33 +52,6 @@ FROM     Person.Person</CommandText>
     <ReportSection>
       <Body>
         <ReportItems>
-          <Textbox Name="textbox1">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Report1</Value>
-                    <Style>
-                      <FontFamily>Segoe UI Light</FontFamily>
-                      <FontSize>24pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>textbox1</rd:DefaultName>
-            <Height>0.42in</Height>
-            <Style>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Tablix Name="table1">
             <TablixBody>
               <TablixColumns>
@@ -130,8 +103,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox2</rd:DefaultName>
-                          <Height>0.22in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -170,8 +141,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox3</rd:DefaultName>
-                          <Height>0.22in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -210,8 +179,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox4</rd:DefaultName>
-                          <Height>0.22in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -250,8 +217,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox5</rd:DefaultName>
-                          <Height>0.22in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -290,8 +255,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox6</rd:DefaultName>
-                          <Height>0.22in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -333,8 +296,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox7</rd:DefaultName>
-                          <Height>0.22in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -376,8 +337,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>BusinessEntityID</rd:DefaultName>
-                          <Height>0.21in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -414,8 +373,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>PersonType</rd:DefaultName>
-                          <Height>0.21in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -452,8 +409,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>FirstName</rd:DefaultName>
-                          <Height>0.21in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -490,8 +445,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>MiddleName</rd:DefaultName>
-                          <Height>0.21in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -528,8 +481,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>LastName</rd:DefaultName>
-                          <Height>0.21in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -566,8 +517,6 @@ FROM     Person.Person</CommandText>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>EmailPromotion</rd:DefaultName>
-                          <Height>0.21in</Height>
-                          <Width>1in</Width>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -620,14 +569,63 @@ FROM     Person.Person</CommandText>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.42in</Top>
+            <Height>0.43in</Height>
+            <Width>6in</Width>
             <Style />
           </Tablix>
         </ReportItems>
-        <Height>0.85in</Height>
+        <Height>2.3in</Height>
         <Style />
       </Body>
-      <Width>6in</Width>
+      <Width>6.70833in</Width>
       <Page>
+        <PageHeader>
+          <Height>2.54cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox8">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">Person Report</Value>
+                      <Style>
+                        <FontFamily>Bahnschrift SemiBold Condensed</FontFamily>
+                        <FontSize>20pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox8</rd:DefaultName>
+              <Top>0.255in</Top>
+              <Left>2.21667in</Left>
+              <Height>0.49167in</Height>
+              <Width>1.78333in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
         <TopMargin>1in</TopMargin>
@@ -644,6 +642,6 @@ FROM     Person.Person</CommandText>
   </ReportParametersLayout>
   <Language>pl-PL</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Invalid</rd:ReportUnitType>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>429d08a1-2a2c-4f5e-b5f0-769e1eb1a0ce</rd:ReportID>
 </Report>
