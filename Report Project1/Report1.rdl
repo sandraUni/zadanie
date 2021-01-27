@@ -56,22 +56,22 @@ FROM     Person.Person</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.00833in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.00833in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.00833in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.00833in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.00833in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.00833in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -569,15 +569,16 @@ FROM     Person.Person</CommandText>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.42in</Top>
+            <Left>0.68792cm</Left>
             <Height>0.43in</Height>
-            <Width>6in</Width>
+            <Width>6.05in</Width>
             <Style />
           </Tablix>
         </ReportItems>
-        <Height>1.59167in</Height>
+        <Height>7.794cm</Height>
         <Style />
       </Body>
-      <Width>6.40833in</Width>
+      <Width>16.27717cm</Width>
       <Page>
         <PageHeader>
           <Height>3.20887cm</Height>
@@ -681,12 +682,13 @@ FROM     Person.Person</CommandText>
             </Border>
           </Style>
         </PageFooter>
-        <PageHeight>11.69in</PageHeight>
-        <PageWidth>8.27in</PageWidth>
-        <LeftMargin>1in</LeftMargin>
-        <RightMargin>1in</RightMargin>
-        <TopMargin>1in</TopMargin>
-        <BottomMargin>1in</BottomMargin>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>22cm</PageWidth>
+        <LeftMargin>2.54cm</LeftMargin>
+        <RightMargin>2.54cm</RightMargin>
+        <TopMargin>2.54cm</TopMargin>
+        <BottomMargin>2.54cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
         <Style />
       </Page>
     </ReportSection>
@@ -835,6 +837,6 @@ SZJqsHAiSZIkSZJUg4UTSZIkSZKkGiycSJIkSZIk1WDhRJKk1reAEUiSJPWOhRNJklrfcCOQJEnqHQsn
   </EmbeddedImages>
   <Language>pl-PL</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>9683f69a-6597-463d-92c2-48339fe9aebb</rd:ReportID>
 </Report>
