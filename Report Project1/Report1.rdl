@@ -740,7 +740,7 @@ FROM     Person.PersonPhone</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>="State as of the day: " + Format(DateValue("27 stycznia 2021"),"dd.MM.yyyy")</Value>
+                    <Value>=Format(DateValue("27 stycznia 2021"), "Long Date")</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -1345,7 +1345,7 @@ FROM     Person.PersonPhone</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>="Today is: " + Format(Today,"dd.MM.yyyy")</Value>
+                    <Value>="Today is: " + Format(Globals!ExecutionTime, "Long Date")</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -1380,7 +1380,7 @@ FROM     Person.PersonPhone</CommandText>
       <Width>21.12287cm</Width>
       <Page>
         <PageHeader>
-          <Height>3.20887cm</Height>
+          <Height>3.27237cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
