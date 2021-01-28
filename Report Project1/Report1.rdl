@@ -202,27 +202,27 @@ FROM     Person.PersonPhone</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.00833in</Width>
+                  <Width>0.94365in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.00833in</Width>
+                  <Width>0.94365in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.00833in</Width>
+                  <Width>0.94365in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.00833in</Width>
+                  <Width>0.94365in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.00833in</Width>
+                  <Width>0.94365in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.00833in</Width>
+                  <Width>0.94365in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.22in</Height>
+                  <Height>0.2075in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -457,7 +457,7 @@ FROM     Person.PersonPhone</CommandText>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.21in</Height>
+                  <Height>0.1975in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -714,10 +714,10 @@ FROM     Person.PersonPhone</CommandText>
             </TablixRowHierarchy>
             <FixedColumnHeaders>true</FixedColumnHeaders>
             <DataSetName>DataSet1</DataSetName>
-            <Top>0.745in</Top>
-            <Left>0.75353cm</Left>
-            <Height>0.43in</Height>
-            <Width>6.05in</Width>
+            <Top>0.95333in</Top>
+            <Left>1.73925cm</Left>
+            <Height>0.405in</Height>
+            <Width>5.6619in</Width>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -751,7 +751,7 @@ FROM     Person.PersonPhone</CommandText>
             <Top>0.32569cm</Top>
             <Left>1.73925cm</Left>
             <Height>0.6cm</Height>
-            <Width>7.5165cm</Width>
+            <Width>6.69778cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -767,10 +767,10 @@ FROM     Person.PersonPhone</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>3.75cm</Width>
+                  <Width>5.214cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.75cm</Width>
+                  <Width>5.214cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -927,9 +927,9 @@ FROM     Person.PersonPhone</CommandText>
             </TablixRowHierarchy>
             <DataSetName>DataSet3</DataSetName>
             <Top>3.7465cm</Top>
-            <Left>0.93703cm</Left>
+            <Left>4.1967cm</Left>
             <Height>1.327cm</Height>
-            <Width>7.5cm</Width>
+            <Width>10.428cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1319,10 +1319,10 @@ FROM     Person.PersonPhone</CommandText>
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet3</DataSetName>
-            <Top>3.7465cm</Top>
-            <Left>10.9982cm</Left>
-            <Height>5cm</Height>
-            <Width>7.5cm</Width>
+            <Top>5.54567cm</Top>
+            <Left>1.2192cm</Left>
+            <Height>8.683cm</Height>
+            <Width>14.4653cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1348,10 +1348,10 @@ FROM     Person.PersonPhone</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox49</rd:DefaultName>
-            <Top>0.32569cm</Top>
-            <Left>13.73717cm</Left>
+            <Top>1.17941cm</Top>
+            <Left>1.73925cm</Left>
             <Height>0.6cm</Height>
-            <Width>5.31517cm</Width>
+            <Width>6.67661cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1402,7 +1402,7 @@ FROM     Person.PersonPhone</CommandText>
               <Top>0.21333in</Top>
               <Left>2.11333in</Left>
               <Height>0.49222in</Height>
-              <Width>2.06167in</Width>
+              <Width>2.68667in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
